@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+label {
+  font-size: 20px !important;
+  color: #386466 !important;
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  background-color: #94AFB0 !important;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  margin: 0;
+  font-family: 'Poppins', sans-serif; 
+  color: #DCD0C6;
+}
+
+span, form {
+  color: #386466 !important;
+}
+
+/* Ajuste específico para inputs */
+input {
+  color: #000000 !important; /* Cor preta para o texto digitado */
+  font-family: 'Poppins', sans-serif;
+}
+
+.blocoprincipal {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  max-width: 1000px; 
+  border-radius: 15px;
+  background-color: #AAC3C3;
+}
+
+.bloco_cadastro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 600px;
+  width: 700px;
+  padding: 5px 55px;
+  border-radius: 0px 10px 10px 0px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bloco-login-mensagem {
+  display: block;
+  font-size: xx-large;
+  font-family: "Montserrat-Bold", sans-serif;
+  place-self: flex-start;
+  color: #DCD0C6;
+  font-size: 48px;
+}
+
+.btn-env {
+  font-family: "Montserrat-Bold", sans-serif;
+  display: block;
+  width: 40%;
+  padding: 15px 40px;
+  border-radius: 7px;
+  border: 0;
+  background-color: #386466;
+  color: #DCD0C6;
+  cursor: pointer;
+  font-size: large;
+  margin-top: 20px;
+  margin-left: auto;
+}
+
+.bloco-cor {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #386466;
+  background-size: cover;
+  height: 600px;
+  width: 400px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.titulo_colorido {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-top: 10px;
+  padding: 50px;
+}
+
+.container-formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.campos {
+  flex: 0 1 45%;
+  margin-bottom: 25px;
+}
+
+.campos-obs {
+  flex: 1 1 100%;
+  margin-bottom: 25px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #386466;
+  padding: 20px 130px;
+  border-radius: 15px;
+  color: #DCD0C6;
+  margin: 20px 100px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px; 
+}
+
+.divider {
+  color: #DCD0C6;
+  margin-right: 20px; 
+  margin-left: 10px;  
+  font-size: 30px;
+}
+
+.logo span {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 90px; 
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo-and-search {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-right li {
+  margin: 0 15px;
+}
+
+.nav-right a {
+  text-decoration: none;
+  color: #DCD0C6;
+  padding: 10px 15px;
+  transition: background-color 0.3s;
+}
+
+.search-bar {
+  background: #DCD0C6; 
+  border: 1px solid #e2f0ff;
+  padding: 10px 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+  color: #000000 !important; /* Garante que o texto dentro do campo de busca seja preto */
+}
+
+nav a {
+  text-decoration: none;
+  font-size: large;
+}
+
+header .container-logo {
+  clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+  padding: 16px 60px 16px 0px;
+  width: 10px; 
+}
+
+.main-block {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  height: 580px;
+  margin: 100px auto;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  display: flex;
+}
+
+.principal {
+  display: flex;
+  justify-content: center;
+  margin-top: 130px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #386466;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #000000 !important;
+  background-color: #DCD0C6;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #AAC3C3;
+  box-shadow: 0 0 5px rgba(56, 100, 102, 0.5);
+}
+
+input.form-input {
+  background-color: #DCD0C6 !important;
+  color: #000000 !important;
+}
