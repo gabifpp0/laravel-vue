@@ -16,6 +16,7 @@ return new class extends Migration
             $table->timestamps();
             $table->string('nome');
             $table->string('email', 100)->unique();
+            $table->string('matricula', 25)->unique();
             $table->string('telefone', 20);
             $table->foreignId('turma_id')->constrained('turmas');
             $table->foreignId('curso_id')->constrained('cursos');

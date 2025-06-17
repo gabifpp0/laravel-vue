@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('nome');
+            $table->string('codigo');
+            $table->string('descricao')->nullable();
             $table->foreignId('diretoria_id')->constrained('diretorias');
         }); 
     }

@@ -15,7 +15,9 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('nome');
-            $table->foreignId('servidor_id')->constrained('servidors');
+            $table->strig('codigo')->unique();
+            $table->integer('carga');
+            $table->foreignId('curso_id')->constrained('cursos');
         });
     }
 

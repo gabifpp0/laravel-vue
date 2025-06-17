@@ -14,8 +14,9 @@ return new class extends Migration
         Schema::create('turmas', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->date('ano');
-            $table->foreignId('aluno_id')->constrained('alunos');
+            $table->year('ano');
+            $table->string('semestre');
+            $table->foreignId('curso_id')->constrained('cursos');
             $table->enum('turno', ['manhã', 'tarde', 'noite', 'integral'])->default('integral');
         });
     }

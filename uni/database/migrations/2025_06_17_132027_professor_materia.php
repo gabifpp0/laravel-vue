@@ -11,13 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('servidores', function (Blueprint $table) {
+        Schema::create('professor_materia', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('nome');
-            $table->foreignId('funcao_id')->constrained('funcoes');
-            $table->foreignId('setor_id')->constrained('setores');
-            $table->softDeletes(); 
+            $table->foreignId('servidor_id')->constrained('servidores');
+            $table->foreignId('materia_id')->constrained('materias');
+            $table->string('periodo')->nullable();
+
+            $table->unique(['materia_d', 'servidor_id']);
         });
     }
 
@@ -26,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('servidors');
+        Schema::dropIfExists('professor_materia');
     }
 };
