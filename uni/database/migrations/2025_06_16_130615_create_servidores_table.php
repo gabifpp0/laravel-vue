@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('servidores', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->foreignId('user_id')->constrained('users');
             $table->string('nome');
             $table->foreignId('funcao_id')->constrained('funcoes');
             $table->foreignId('setor_id')->constrained('setores');

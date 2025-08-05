@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('alunos', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->foreignId('user_id')->constrained('users');
             $table->string('nome');
-            $table->string('email', 100)->unique();
             $table->string('matricula', 25)->unique();
             $table->string('telefone', 20);
             $table->foreignId('turma_id')->constrained('turmas');
